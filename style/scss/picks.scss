@@ -89,7 +89,7 @@
 @media screen and (min-width: $first-breakpoint) {
 
     #picks-section {
-        padding: 90px $left-padding-md;
+        padding: 70px $left-padding-md;
 
         #no-results {
             display: flex;
@@ -123,7 +123,7 @@
 @media screen and (min-width: $second-breakpoint) {
 
     #picks-section {
-        padding: 90px $left-padding-lg;
+        padding: 70px $left-padding-lg;
 
         #no-results {
 
@@ -137,6 +137,6 @@
 @media screen and (min-width: $third-breakpoint) {
 
     #picks-section {
-        padding: 90px $left-padding-xl;
+        padding: 70px $left-padding-xl;
     }
 }

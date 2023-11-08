@@ -90,7 +90,8 @@ header {
     left: 350px; } }
 
 #selector-section {
-  padding: 30px 50px;
+  padding: 50px 50px;
+  padding-top: 30px;
   color: #8c8c8c; }
   #selector-section .selector-item {
     padding-top: 20px; }
@@ -116,7 +117,8 @@ header {
         width: 100%;
         background-color: rgba(0, 0, 0, 0);
         border-radius: 9999px;
-        margin-top: 10px; }
+        margin-top: 10px;
+        transition: background-color 150ms; }
         #selector-section .selector-item .select-container select:hover {
           cursor: pointer;
           background-color: rgba(220, 220, 220, 0.3); }
@@ -131,10 +133,10 @@ header {
 
 @media screen and (min-width: 700px) {
   #selector-section {
-    padding: 30px 100px;
+    padding: 70px 100px;
     display: flex; }
     #selector-section .selector-item {
-      padding: 30px 10px;
+      padding: 0 10px;
       width: 33.33333%;
       max-width: 370px; }
       #selector-section .selector-item .select-container label {
@@ -142,14 +144,14 @@ header {
 
 @media screen and (min-width: 1200px) {
   #selector-section {
-    padding: 50px 200px;
+    padding: 70px 200px;
     justify-content: space-between; }
     #selector-section .selector-item .select-container label {
       height: 30px; } }
 
 @media screen and (min-width: 1600px) {
   #selector-section {
-    padding: 60px 350px; } }
+    padding: 70px 350px; } }
 
 #picks-section {
   background-color: #F6F6F6;
@@ -203,7 +205,7 @@ header {
 
 @media screen and (min-width: 700px) {
   #picks-section {
-    padding: 90px 100px; }
+    padding: 70px 100px; }
     #picks-section #no-results {
       display: flex; }
       #picks-section #no-results .text-container {
@@ -219,10 +221,10 @@ header {
 
 @media screen and (min-width: 1200px) {
   #picks-section {
-    padding: 90px 200px; }
+    padding: 70px 200px; }
     #picks-section #no-results .img-container {
       margin-left: 100px; } }
 
 @media screen and (min-width: 1600px) {
   #picks-section {
-    padding: 90px 350px; } }
+    padding: 70px 350px; } }
