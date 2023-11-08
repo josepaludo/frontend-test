@@ -1,0 +1,20 @@
+
+$first-breakpoint: 700px;
+$second-breakpoint: 1200px;
+$third-breakpoint: 1600px;
+
+$light-green: #75BC97;
+$dark-green: #15573F;
+$salmon: #FD9872;
+$off-white: #F6F6F6;
+$light-gray: rgb(140, 140, 140);
+
+$left-padding-sm: 50px;
+$left-padding-md: 100px;
+$left-padding-lg: 200px;
+$left-padding-xl: 350px;
+
+@mixin aboluse-h-100 {
+    position: absolute;
+    height: 100%;
+}

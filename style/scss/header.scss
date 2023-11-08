@@ -1,0 +1,116 @@
+@import './variables.scss';
+
+
+header {
+    background-color: $light-green;
+    position: relative;
+    overflow: hidden;
+
+    #heading-container {
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: $left-padding-sm;
+        top: 50px;
+
+        svg {
+            z-index: 6;
+        }
+
+        h1 {
+            color: white;
+            margin: 50px 0;
+            padding-right: 50px;
+            font-size: 300%;
+            font-weight: bold;
+        }
+    }
+
+    #desktop-hero-img-container {
+        display: none;
+    }
+
+    #mobile-hero-img-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 300px;
+
+        .background-img {
+            z-index: 2;
+            position: relative;
+            width: 100%;
+        }
+        .overlay-img {
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 50px;
+        }
+    }
+}
+
+@media screen and (min-width: $first-breakpoint) {
+
+    #mobile-hero-img-container {
+        display: none;
+    }
+
+    header {
+
+        #heading-container {
+            left: $left-padding-md;
+
+            h1 {
+                font-size: 400%;
+            }
+        }
+
+        #desktop-hero-img-container {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 500px;
+
+            .left-leaves {
+                @include aboluse-h-100();
+                z-index: 2;
+                left: 0;
+            }
+            .right-leaves {
+                @include aboluse-h-100();
+                z-index: 3;
+                right: 0;
+            }
+            .plant-person {
+                z-index: 2;
+                @include aboluse-h-100();
+                right: 18vw;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: $second-breakpoint) {
+
+    header {
+
+        #heading-container {
+            left: $left-padding-lg;
+        }
+    }
+
+}
+
+@media screen and (min-width: $third-breakpoint) {
+
+    header {
+
+        #heading-container {
+            left: $left-padding-xl;
+        }
+    }
+
+}

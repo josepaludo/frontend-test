@@ -1,0 +1,75 @@
+#picks-section {
+  background-color: #F6F6F6;
+  padding: 50px 50px;
+  color: #8c8c8c; }
+  #picks-section #no-results .text-container h1 {
+    font-weight: 600;
+    font-size: 300%; }
+  #picks-section #no-results .text-container p {
+    margin-top: 20px;
+    font-size: 120%; }
+  #picks-section #no-results .img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+  #picks-section #results .results-header img {
+    max-height: 100px; }
+  #picks-section #results .results-header h1 {
+    margin-top: 20px;
+    font-size: 300%;
+    color: #1f1f1f;
+    font-weight: 600; }
+  #picks-section #results #results-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 50px; }
+    #picks-section #results #results-container .results-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
+      height: 270px;
+      padding: 10px 20px 20px 20px;
+      overflow: hidden; }
+      #picks-section #results #results-container .results-item:hover {
+        opacity: 0.9; }
+      #picks-section #results #results-container .results-item h2 {
+        color: #15573F;
+        font-weight: 600;
+        width: 100%;
+        text-align: start; }
+      #picks-section #results #results-container .results-item .img-container {
+        flex-grow: 1;
+        display: flex;
+        align-items: center; }
+        #picks-section #results #results-container .results-item .img-container img {
+          max-height: 200px;
+          max-width: 100%; }
+
+@media screen and (min-width: 700px) {
+  #picks-section {
+    padding: 90px 100px; }
+    #picks-section #no-results {
+      display: flex; }
+      #picks-section #no-results .text-container {
+        margin: auto 0; }
+        #picks-section #no-results .text-container h1 {
+          font-size: 400%; }
+      #picks-section #no-results .img-container {
+        align-items: center;
+        margin-top: 0;
+        margin-left: 20px; }
+    #picks-section #results .results-header h1 {
+      font-size: 400%; } }
+
+@media screen and (min-width: 1200px) {
+  #picks-section {
+    padding: 90px 200px; }
+    #picks-section #no-results .img-container {
+      margin-left: 100px; } }
+
+@media screen and (min-width: 1600px) {
+  #picks-section {
+    padding: 90px 350px; } }

@@ -1,0 +1,71 @@
+header {
+  background-color: #75BC97;
+  position: relative;
+  overflow: hidden; }
+  header #heading-container {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    top: 50px; }
+    header #heading-container svg {
+      z-index: 6; }
+    header #heading-container h1 {
+      color: white;
+      margin: 50px 0;
+      padding-right: 50px;
+      font-size: 300%;
+      font-weight: bold; }
+  header #desktop-hero-img-container {
+    display: none; }
+  header #mobile-hero-img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 300px; }
+    header #mobile-hero-img-container .background-img {
+      z-index: 2;
+      position: relative;
+      width: 100%; }
+    header #mobile-hero-img-container .overlay-img {
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 50px; }
+
+@media screen and (min-width: 700px) {
+  #mobile-hero-img-container {
+    display: none; }
+  header #heading-container {
+    left: 100px; }
+    header #heading-container h1 {
+      font-size: 400%; }
+  header #desktop-hero-img-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 500px; }
+    header #desktop-hero-img-container .left-leaves {
+      position: absolute;
+      height: 100%;
+      z-index: 2;
+      left: 0; }
+    header #desktop-hero-img-container .right-leaves {
+      position: absolute;
+      height: 100%;
+      z-index: 3;
+      right: 0; }
+    header #desktop-hero-img-container .plant-person {
+      z-index: 2;
+      position: absolute;
+      height: 100%;
+      right: 18vw; } }
+
+@media screen and (min-width: 1200px) {
+  header #heading-container {
+    left: 200px; } }
+
+@media screen and (min-width: 1600px) {
+  header #heading-container {
+    left: 350px; } }

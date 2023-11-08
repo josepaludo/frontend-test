@@ -1,17 +1,156 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-  <head>
-    <title>YpNext FrontEnd Test - Greenthumb</title>
+
+<head>
+
+    <title>Greenthumb</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
-  </head>
+    <link rel="stylesheet" href="./style/css/reset.css" />
+    <link rel="stylesheet" href="./style/css/index.css" />
+    <script defer src="./script/index.js" ></script>
 
-  <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
-  </body>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="heading-container">
+            <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+            <h1>
+                Find your <br />
+                next green <br />
+                friend
+            </h1>
+            <img src="./images/icons/arrow-down.svg" alt="Arrow Down" />
+        </div>
+
+        <div id="mobile-hero-img-container">
+            <img
+                class="background-img"
+                src="./images/hero/mobile/mobile-leaves.png"
+                alt="Leaves"
+            >
+            <img
+                class="overlay-img"
+                src="./images/hero/mobile/mobile-plantperson.png"
+                alt="Person with Plant"
+            >
+        </div>
+
+        <div id="desktop-hero-img-container">
+            <img
+                class="left-leaves"
+                src="./images/hero/desktop/left-leaves.png"
+                alt="Left Leaves"
+            >
+            <img
+                class="right-leaves"
+                src="./images/hero/desktop/right-leaves.png"
+                alt="Right Leaves">
+            <img
+                class="plant-person"
+                src="./images/hero/desktop/plantperson.png"
+                alt="Plant Person"
+            >
+        </div>
+
+    </header>
+
+    <section id="selector-section">
+
+        <div class="selector-item">
+            <div class="image-container">
+                <img src="./images/illustrations/sun.png" alt="Sun">
+            </div>
+            <div class="select-container">
+                <label for="sun">
+                    <span>2.</span> Set the amount of <span>sunlight</span> your plant will get.
+                </label>
+                <select name="sun" id="sun">
+                    <option value="none" selected disabled hidden >Select...</option>
+                    <option value="no">No</option>
+                    <option value="low">Low</option>
+                    <option value="high">High</option>
+                </select>
+                <img src="./images/icons/arrow-head.svg" alt="Hello">
+            </div>
+        </div>
+
+        <div class="selector-item">
+            <div class="image-container">
+                <img src="./images/illustrations/wateringcan.png" alt="Sun">
+            </div>
+            <div class="select-container">
+                <label for="water">
+                    <span>1.</span> How ofter do you want to <span>water</span> your plant?
+                </label>
+                <select name="water" id="water">
+                    <option value="none" selected disabled hidden >Select...</option>
+                    <option value="regularly">Regularly</option>
+                    <option value="daily">Daily</option>
+                    <option value="rarely" >Rarely</option>
+                </select>
+                <img src="./images/icons/arrow-head.svg" alt="Hello">
+            </div>
+
+        </div>
+
+        <div class="selector-item">
+            <div class="image-container">
+                <img src="./images/illustrations/dog.png" alt="Sun">
+            </div>
+            <div class="select-container">
+                <label for="water">
+                    <span>3.</span> Do you have pets? Do they <span>chew</span> plants?
+                </label>
+                <select name="water" id="water">
+                    <option value="none" selected disabled hidden >Select...</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+                <img src="./images/icons/arrow-head.svg" alt="Hello">
+            </div>
+        </div>
+    </section>
+
+    <section id="picks-section">
+
+        <div id="no-results">
+            <div class="text-container">
+                <h1>
+                    No results yet...
+                </h1>
+                <p>
+                    Use the filters above to find the plant that best fits your environment :)
+                </p>
+            </div>
+            <div class="img-container">
+                <img src="./images/illustrations/no-results.png" alt="Question mark with leaves.">
+            </div>
+        </div>
+
+        <div id="results">
+
+            <div class="results-header">
+                <img src="./images/illustrations/pick.png" alt="">
+                <h1>Our picks for you</h1>
+            </div>
+
+            <div id="results-container">
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+
 </html>
